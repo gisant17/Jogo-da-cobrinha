@@ -1,0 +1,156 @@
+*{
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+body{
+    background-image: url(céu.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow:
+        4px 4px 0px #ff00ff,
+        8px 8px 0px #00ffff;
+    animation: retro 1s infinite alternate;
+}
+
+#cardJogador{
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+#telaInicial{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#telaInicial h2{
+    color: white;
+    margin: 0;
+    margin-right: 10px;
+}
+
+#telaInicial input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#telaInicial button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff00ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#telaInicial button:hover{
+    background-color: #00ffff;
+    color: black;
+}
+
+#gameCanvas{
+    background-image: url(gramasimples.png);
+    border: 2px solid #ff00b7;
+}
+
+#score{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1d3a8b;
+}
+
+#restartButton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: magenta;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover{
+    background-color: cyan;
+    color: black;
+}
+
+@keyframes retro{
+    0%{
+        transform: scale(1);
+        text-shadow:
+            4px 4px 0px #ff00ff,
+            8px 8px 0px #00ffff;
+    }
+
+    100%{
+        transform: scale(1.05);
+        text-shadow:
+            4px 4px 0px #ffff00,
+            8px 8px 0px #ff0000;
+    }
+}
+
+#painelRanking{
+    position: absolute;
+    right: 40px;
+    top: 120px;
+    width: 250px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid #00ffff;
+}
+
+#painelRanking h2{
+    text-align: center;
+}
+
+#painelRanking input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+#rankingLista{
+    list-style: none;
+    padding-left: 0;
+}
+
+#btnZerarRanking{
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: magenta;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#btnZerarRanking:hover{
+    background-color: cyan;
+    color: black;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Jogo da Cobrinha</h1>
+<div id="cardJogador">
+<div id="telaInicial">
+    <h2>JOGADOR</h2>
+
+    <input type="text" id="nomeJogador" placeholder="Seu nome">
+    <input type="text" id="salaJogador" placeholder="Sua sala">
+
+    <button id="btnJogar">Jogar</button>
+
+    </div>
+</div>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div id="score">Pontuação: 0</div>
+
+    <button id="restartButton">Reiniciar Jogo</button>
+
+    <div id="painelRanking">
+
+        <h2>🎖 TOP 20</h2>
+        <ol id="rankingLista"></ol>
+
+        <button id="btnZerarRanking">Zerar Ranking</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
